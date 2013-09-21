@@ -44,7 +44,7 @@ void setup(){
   maxFrames = 7;
   tictac = 0;
   iFrame = 0;
-  maxiterations = 200;
+  maxiterations = 100;
   xmin = -1.5;
   ymin = -2.5;
   w = 3;
