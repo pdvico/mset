@@ -1,0 +1,11 @@
+{
+  "name": "einsteingram",
+  "version" : "0.0.1",
+  "dependencies" : {
+    "mime" : "1.2.x"
+  },
+  "engines" : {
+    "node" : "0.10.x",
+    "npm" : "1.2.x"
+  }
+}
