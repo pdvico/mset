@@ -46,6 +46,11 @@
 		<!--[if lt IE 9]>
 			<script type="text/javascript">alert("Your browser does not support the canvas tag.");</script>
 		<![endif]-->
+
+		<audio id="ping" src="ping.ogg" type="audio/ogg"></audio>
+		<audio id="shine" src="shine.ogg" type="audio/ogg" volume="0.5"></audio>
+		<script src="audio.js" type="text/javascript"></script>
+
 		<script src="processing.js" type="text/javascript"></script>
 		<script type="text/javascript">
 // convenience function to get the id attribute of generated sketch html element
@@ -65,9 +70,9 @@ function getProcessingSketchId () { return 'mset'; }
 					<p>JavaScript is required to view the contents of this page.</p>
 				</noscript>
 	    	</div>
-			<h1>The Mandelbrot Set: Do click to zoom in </h1>
-    		<p id="description"></p>
-			<p id="sources"> By Pablo D. Vico. Check out the source code on github</p>
+		
+    		<p id="description"> Click and select region 7 times for creating an animation with the Mandelbrot set.</p>
+			<p id="sources"> Created by Pablo D. Vico. </a></p>
 		</div>
 	</body>
 </html>

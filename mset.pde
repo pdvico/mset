@@ -26,6 +26,9 @@ PImage juliaImages;
 int currentFrame, maxFrames;  
 int tictac;
 int iFrame;
+
+//audio
+boolean isPlaying;
   
 //optimized for ipad - horizontal mode
 
@@ -50,6 +53,7 @@ void setup(){
   w = 3;
   h = 4;
   
+  isPlaying=false;
 }
 
 void draw(){
@@ -73,7 +77,12 @@ void draw(){
     tictac++;
    
     //println("tictac = " + tictac);
-    if (tictac % 60 == 0){
+    if (tictac % 120 == 0){
+      if(!isPlaying){ 
+         playShine();
+         isPlaying=true;
+      };	 	 
+      playPing(); 
       tictac=0;
       image(juliaImages[iFrame],0,0,width,height);
       iFrame++;
@@ -123,7 +132,9 @@ void mouseDragged(){
 }
 
 void mouseReleased(){
-       
+    
+    //playPing(); 
+
     //end rectangle for rect selection
     if (rectSelection){
                        
