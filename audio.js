@@ -1,16 +1,15 @@
-document.getElementById("ping").addEventListener('ended',function(){
-    this.currentTime=0;
-},false);
 
-document.getElementById("shine").addEventListener('ended',function(){
-    this.currentTime=0;
-    this.play();
-},false);
-
-function playPing() {
-    document.getElementById("ping").play();
+function playSound() {
+	document.getElementById("audiofile").addEventListener("ended", function(){
+		this.load();
+		this.play();
+	});
+	document.getElementById("audiofile").play();
 }
 
-function playShine(){
-    document.getElementById("shine").play();
+function stopSound()
+{
+  document.getElementById("audiofile").pause();
+  document.getElementById("audiofile").load();  
+ 
 }
